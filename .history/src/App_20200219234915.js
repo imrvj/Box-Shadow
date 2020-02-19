@@ -7,7 +7,6 @@ function App() {
   const [Veri, setVeri] = useState(10)
   const [Blur, setBlur] = useState(0)
   const [Color, setColor] = useState("black")
- 
   return (
     <>
     
@@ -22,7 +21,14 @@ function App() {
       <input type="range"  min="0" max="200" value={Blur} onChange={(e)=>setBlur(e.target.value)}/>
       <label>Color </label>
       <input type="color"  min="0" max="200" value={Color} onChange={(e)=>setColor(e.target.value)}/>
-      
+      <div class="switch">
+    <label>
+      Outline
+      <input type="checkbox"/>
+      <span className="lever"></span>
+      Inset
+    </label>
+  </div>
      </div>
       <div className="output">
         <div className="Box" style={{boxShadow:`${Hori}px ${Veri}px ${Blur}px ${Color}`}}>

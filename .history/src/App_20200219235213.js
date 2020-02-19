@@ -7,7 +7,7 @@ function App() {
   const [Veri, setVeri] = useState(10)
   const [Blur, setBlur] = useState(0)
   const [Color, setColor] = useState("black")
- 
+  const [Check, setCheck] = useState(false)
   return (
     <>
     
